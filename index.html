@@ -17,6 +17,33 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link rel="stylesheet" href="styles.55f478baac1d6226b0a5.css"></head>
 <body class="mat-typography">
+  <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v7.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="642231735788465"
+theme_color="#c5b358"
+logged_in_greeting="Salut, pot sa te ajut ?"
+logged_out_greeting="Salut, pot sa te ajut ?">
+</div>
+<!-- https://www.youtube.com/watch?v=Q-aozeZNceo -->
   <app-root></app-root>
-<script src="runtime-es2015.1eba213af0b233498d9d.js" type="module"></script><script src="runtime-es5.1eba213af0b233498d9d.js" nomodule defer></script><script src="polyfills-es5.8762124472dbe27575bb.js" nomodule defer></script><script src="polyfills-es2015.f2c5ab749249a66bdf26.js" type="module"></script><script src="main-es2015.98283b52bf4229ba84f8.js" type="module"></script><script src="main-es5.98283b52bf4229ba84f8.js" nomodule defer></script></body>
+<script src="runtime-es2015.1eba213af0b233498d9d.js" type="module"></script><script src="runtime-es5.1eba213af0b233498d9d.js" nomodule defer></script><script src="polyfills-es5.8762124472dbe27575bb.js" nomodule defer></script><script src="polyfills-es2015.f2c5ab749249a66bdf26.js" type="module"></script><script src="main-es2015.438c210297e09bbc0233.js" type="module"></script><script src="main-es5.438c210297e09bbc0233.js" nomodule defer></script></body>
 </html>
